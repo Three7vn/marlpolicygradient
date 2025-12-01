@@ -1,5 +1,12 @@
 logs/
-*.pth
-*.pkl
-*.png
-
+*.__pycache__/
+*.pyc
+.DS_Store
+results/
+Unity/
+weights/
+venv/
+venv310/
+test_environment.py
+run_training.py
+*.zip
