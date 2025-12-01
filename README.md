@@ -1,25 +1,25 @@
 # Multi-Agent Deep Deterministic Policy Gradient for Tennis
 
-An implementation of Multi-Agent Deep Deterministic Policy Gradient (MADDPG) for the Unity ML-Agents Tennis environment, featuring advanced reinforcement learning techniques.
+An implementation of Multi-Agent Deep Deterministic Policy Gradient (MADDPG) for the Unity ML-Agents Tennis environment.
 
 ## Project Overview
 
 This project trains two cooperative agents to play tennis, keeping the ball in play for as long as possible.
 
 <p align="center">
-  <img src="animation.gif" alt="Trained Tennis Agents" width="500"/>
+  <img src="animation.gif" alt="Trained Tennis Agents" width="300"/>
 </p> 
 
 ## Key Features
 
 - **Multi-Agent Cooperative Learning**: Two agents learn to collaborate
 - **Distributional RL**: C51-style value distribution learning for better value estimation
-- **Prioritized Experience Replay**: Focuses learning on important transitions
+- **Prioritised Experience Replay**: Focuses learning on important transitions
 - **Noisy Networks**: Parameter space noise for structured exploration
 - **N-step Returns**: Multi-step bootstrapping for faster credit assignment
 - **Soft Target Updates**: Polyak averaging for stable learning
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```text
 selfdrivingmarl/
@@ -42,7 +42,7 @@ selfdrivingmarl/
 └── requirements.txt
 ```
 
-## 📋 Requirements
+## Requirements
 
 - Python 
 - PyTorch
@@ -53,10 +53,10 @@ selfdrivingmarl/
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-**Note**: Download the [Unity Tennis environment](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip), extract it, and place it in a `Unity/` folder at the project root.
+**Note**: Download the [Unity Tennis environment](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip), extract it (from Udacity Deep Reinforcement Learning program), and place it in a `Unity/` folder at the project root.
 
 ## Environment
 
@@ -112,9 +112,6 @@ The implementation uses DDPG with several enhancements:
 4. **Prioritized Replay**: Samples important transitions more frequently
 5. **N-step Returns**: Looks ahead multiple steps for better credit assignment
 
-## Performance
-
-The agent typically solves the environment (average score ≥ 0.5) within 150-200 episodes.
 
 ## Hyperparameters
 
